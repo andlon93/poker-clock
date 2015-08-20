@@ -1,0 +1,59 @@
+html
+{
+    height: 100%;
+    /* IE10 Consumer Preview */
+    background-image:     -ms-radial-gradient(center, ellipse farthest-corner, #fff 0%, #a8a8a8 100%);
+    /* Mozilla Firefox */
+    background-image:    -moz-radial-gradient(center, ellipse farthest-corner, #fff 0%, #a8a8a8 100%);
+    /* Opera */
+    background-image:      -o-radial-gradient(center, ellipse farthest-corner, #fff 0%, #a8a8a8 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(radial, center center, 0, center center, 505, color-stop(0, #fff), color-stop(1, #a8a8a8));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #fff 0%, #b8b8b8 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image:         radial-gradient(ellipse farthest-corner at center, #fff 0%, #a8a8a8 100%);
+}
+#levels{
+	border: 5px solid;
+	font-size: 40px;
+	position: relative;
+	top: 0px;
+	left: 70px;
+	width: 120px;
+}
+#time{
+	border: 5px solid;
+	font-size: 50px;
+	position: relative;
+	left: 500px;
+	top: -120px;
+	width: 180px;
+}
+#players{
+	border: 5px solid;
+	font-size: 30px;
+	position: relative;
+	left: 950px;
+	top: -170px;
+	width: 220px;
+}
+#chipValues{
+	border: 5px solid;
+	font-size: 50px;
+	position: relative;
+	top: 40px;
+}
+#payouts{
+	border: 5px solid;
+	font-size: 20px;
+	position: relative;
+	left: 300px;
+	top: -20px
+}
+
+.topButton{
+	padding-right: 20px;
+	margin-right: 100px;
+	margin-left: 50px;
+}
