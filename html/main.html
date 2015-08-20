@@ -4,14 +4,16 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<title>PokerClock</title>
+	<script src="../javascript/jquery.js"></script>
 	<script src="../javascript/pokerLogic.js"></script>
+	<script src="../javascript/playersAndTables.js"></script>
+
 </head>
 <body>
 	<div id="buttons">
 		<input type="button" class="topButton" id="showTables" value="Show Tables"/>
-				<input type="button" class="topButton" id="reset" value="Reset"/>
+		<input type="button" class="topButton" id="reset" value="Reset"/>
 		<input type="button" class="topButton" id="pauseStart" value="Pause/start"/>
-
 		<input type="button" class="topButton" id="addPlayer" value="Add Player"/>
 		<input type="button" class="topButton" id="removePlayer" value="Remove Player"/>
 	</div>
@@ -24,7 +26,7 @@
 			00:00:00
 		</div>
 		<div id="players">
-			Players left: 3/21
+			Players left: <span id="playerCount"> 0/0 </span>
 		</div>
 	</div>
 	<div id="lowerInfo">
@@ -34,9 +36,10 @@
 			hvit = 13
 		</div>
 		<div id="payouts">
-			<ol>
-				<li> 1. Ole </li>
-				<li> 2. Andreas </li>
+		Payouts
+			<ol id="payList">
+				<li> Ole </li>
+				<li> Andreas </li>
 			</ol>
 		</div>
 	</div>

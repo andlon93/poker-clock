@@ -6,9 +6,12 @@ var diffTime = 0;          //the difference in time between each time the clock 
 var dispTime = 0;          //the time that will be shown
 var start = false;        //Contains whether the clock is running or not
 
+
 var myVar;
 var temp = 60000;
 var remaining=0;
+
+
 
 function displayTheTime(time){   //converts from JS Date format(or milliseconds) to a more readeable one (HH:MM:SS)
 	var d = new Date(time);
@@ -47,6 +50,9 @@ function reset(){	   //runs if the reset button is clicked
   start = false;
   document.getElementById('time').innerHTML = "00:00:00";
 }
+
+
+
 
 window.addEventListener('load',function(){
   document.getElementById('reset').addEventListener('click',reset);
