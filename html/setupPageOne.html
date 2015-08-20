@@ -2,61 +2,75 @@
 <html>
 <head>
  	<meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9c442fc8e90fcb50931eeef2f3231288bf1293dd
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 	
+
+ 		
+ 	<link rel="stylesheet" type="text/css" href="../css/setupPage.css"> 
 </head>
 
 
 <body>
 
 <div class="container">
- 	<h2>General</h2>
+ 	<div class="general"> <h2>General</h2> </div>
   		
-  	<form role="form">
-		<div class="form-group">
+  	<form role="form" method="get" action="">> 
+		<div class="form-group general">
 		     <label for="playersPerTable">PLayers per table:</label>
-		     <input type="number" class="form-control" id="playersPerTable" placeholder="0">
+		     <input name="playersPerTable" type="number" class="form-control" id="playersPerTable" placeholder="0">
 		</div>
-		<div class="form-group">
+
+		<div class="form-group general">
 		    <label for="maxTables">Max number of tables:</label>
-		    <input type="number" class="form-control" id="maxTables" placeholder="0">
+		    <input name="maxTables" type="number" class="form-control" id="maxTables" placeholder="0">
 		</div>
-		<div class="form-group">
-		    <label for="Blindlevels">Number of blindlevels:</label>
-		    <input type="number" class="form-control" id="Blindlevels" placeholder="0">
-		</div>
-		<div class="form-group">
+
+		<div class="form-group general">
 		    <label for="lateReg">Levels of late registration:</label>
-		    <input type="number" class="form-control" id="lateReg" placeholder="0">
+		    <input name="blindlevels" type="number" class="form-control" id="lateReg" placeholder="0">
 		</div>
 
 
-		<h2>Chip values</h2>
-		<div class="form-group">
+		<div class="chipValues"> <h2>Chip values</h2> </div>
+		<div class="form-group chipValues">
 		    <label for="white">White:</label>
-		    <input type="number" class="form-control" id="white" placeholder="5">
+		    <input name="white" type="number" class="form-control" id="white" placeholder="5">
 		</div>
-		<div class="form-group">
+		<div class="form-group chipValues">
 		    <label for="blue">Blue:</label>
-		    <input type="number" class="form-control" id="blue" placeholder="25">
+		    <input name="blue" type="number" class="form-control" id="blue" placeholder="25">
 		</div>
-		<div class="form-group">
+		<div class="form-group chipValues">
 		    <label for="red">Red:</label>
-		    <input type="number" class="form-control" id="red" placeholder="100">
+		    <input name="red" type="number" class="form-control" id="red" placeholder="100">
 		</div>
-		<div class="form-group">
+		<div class="form-group chipValues">
 		    <label for="green">Green:</label>
-		    <input type="number" class="form-control" id="green" placeholder="500">
+		    <input name="green" type="number" class="form-control" id="green" placeholder="500">
 		</div>
-		<div class="form-group">
+		<div class="form-group chipValues">
 		    <label for="black">Black:</label>
-		    <input type="number" class="form-control" id="black" placeholder="2000">
+		    <input name="black" type="number" class="form-control" id="black" placeholder="2000">
 		</div>
 
-
+		<div class="form-group blindlevels">
+			<h2> Blindlevels</h2>
+			
+			</div>
+		</div>
+		
 		<button type="submit" class="btn btn-default">Submit</button>
   	</form>
+  		
+  	<button class="btn btn-nextPage"> new level </button>
 </div>
 
+
+ <script src="../javascript/setupPage.js"> </script>
 </body> 
 </html>
