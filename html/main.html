@@ -7,7 +7,6 @@
 	<script src="../javascript/jquery.js"></script>
 	<script src="../javascript/pokerLogic.js"></script>
 	<script src="../javascript/playersAndTables.js"></script>
-
 </head>
 <body>
 	<div id="buttons">
@@ -16,7 +15,10 @@
 		<input type="button" class="topButton" id="pauseStart" value="Pause/start"/>
 		<input type="button" class="topButton" id="addPlayer" value="Add Player"/>
 		<input type="button" class="topButton" id="removePlayer" value="Remove Player"/>
+			Sound: <input type="checkbox" id="soundBtn">
+	Pause: <input type="checkbox" id="pauseBtn">
 	</div>
+
 	<hr>
 	<div id="upperInfo">
 		<div id="levels">
@@ -26,7 +28,9 @@
 			00:00:00
 		</div>
 		<div id="players">
-			Players left: <span id="playerCount"> 0/0 </span>
+			Players left: <span id="playerCount"> 0/0 </span></br>
+			<span id="totalPot">0,-</span>
+			<span id="BuyIn"></span>
 		</div>
 	</div>
 	<div id="lowerInfo">
@@ -35,12 +39,14 @@
 			</br>
 			hvit = 13
 		</div>
-		<div id="payouts">
-		Payouts
-			<ol id="payList">
-				<li> Ole </li>
-				<li> Andreas </li>
-			</ol>
-		</div>
+		<table id="playerTable">
+			<tr><th> Name </th> <th> Placement </th> </tr>
+		</table>
+   		<div id="playerList">
+	   </div>
+ 	 </div>
+   <table id="pointTable">
+   <tr><th>Place</th><th>Points</th><th>Person</th></tr>
+   </table>
 	</div>
 </body>

@@ -24,11 +24,11 @@ html
 }
 #time{
 	border: 5px solid;
-	font-size: 50px;
+	font-size: 80px;
 	position: relative;
-	left: 500px;
+	left: 450px;
 	top: -120px;
-	width: 180px;
+	width: 300px;
 }
 #players{
 	border: 5px solid;
@@ -36,22 +36,32 @@ html
 	position: relative;
 	left: 950px;
 	top: -170px;
-	width: 220px;
+	width: 300px;
 }
 #chipValues{
 	border: 5px solid;
 	font-size: 50px;
 	position: relative;
-	top: 40px;
+	top: -20px;
+	left: 70px;
 	width: 200px;
 }
-#payouts{
+#playerTable{
+	border: 5px solid;
+	font-size: 18px;
+	position: relative;
+	top: -150px;
+	left: 500px;
+	width: 200px;
+}
+#pointTable{
 	border: 5px solid;
 	font-size: 20px;
-	position: relative;
-	left: 950px;
-	top: -20px;
+	position: absolute;
+	top: 315px;
 	width: 200px;
+	float: left;
+	left: 950px;
 }
 
 .topButton{
